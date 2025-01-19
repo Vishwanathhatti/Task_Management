@@ -9,7 +9,6 @@ import taskRouter from "./routes/task.route.js"
 const app = express()
 app.use(express.json())
 app.use(morgan('dev'))
-app.use(errorHandler)
 app.use('/tasks',taskRouter)
 app.use('/auth',userRouter)
 
